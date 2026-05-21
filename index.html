@@ -25,10 +25,10 @@
     </div>
     <!-- page-1 End  -->
     <!-- Page-2 Start  -->
-    <div class="py-10" id="secound" hidde>
+    <div class="py-10" id="secound">
         <div class="max-w-212.5 mx-auto bg-white pt-20 pb-5 px-20 text-center rounded-tl-2xl rounded-tr-2xl ">
             <h1 class="uppercase font-bold text-3xl" id="secoundHeading">Player_One</h1>
-            <input type="text" placeholder="Pick A Number Between 1 to 10" id="secoundInput"
+            <input type="number" placeholder="Pick A Number Between 1 to 10" id="secoundInput"
                 class="py-3 px-5 my-7 block w-87.5 mx-auto border border-gray-500 text-center rounded-3xl font-bold opacity-50">
             <button class="py-3 px-5 font-bold text-white bg-teal-500 rounded-[20px] cursor-pointer">Let's Play</button>
         </div>
@@ -40,8 +40,47 @@
     </div>
     <!-- Page-2 End  -->
     <!-- Page-3 Start  -->
-     
+    <div class="py-10" id="third">
+        <div class="max-w-212.5 mx-auto bg-white pt-20 pb-5 px-20 text-center rounded-tl-2xl rounded-tr-2xl">
+            <h1 class="uppercase font-bold text-3xl" id="thirdHeading">Player_Two</h1>
+            <input type="text" placeholder="Enter Your Name to Begin"
+                class="py-3 px-5 my-7 block w-87.5 mx-auto border border-gray-500 text-center rounded-3xl font-bold opacity-50">
+            <button class="py-3 px-5 font-bold text-white bg-teal-500 rounded-[20px] cursor-pointer">Start Game</button>
+        </div>
+        <div class="max-w-212.5 mx-auto bg-white px-10 pb-10 pt-10 text-center rounded-bl-2xl rounded-br-2xl">
+            <button
+                class="py-4 px-8 bg-red-700 text-white font-bold drop-shadow-xl text-3xl rounded-[53px]  border border-red-700"
+                id="thirdWarningText" hidden>Please Enter Your Name First!!</button>
+        </div>
+    </div>
     <!-- Page-3 End  -->
+    <!-- Page-4 Start  -->
+    <div class="py-10" id="fourth">
+        <div class="max-w-212.5 mx-auto bg-white pt-20 pb-5 px-20 text-center rounded-tl-2xl rounded-tr-2xl">
+            <h1 class="uppercase font-bold text-3xl" id="fourthHeading">Guess The Number</h1>
+            <input type="number" placeholder="Guess The Number Between 1 To 10"
+                class="py-3 px-5 my-7 block w-87.5 mx-auto border border-gray-500 text-center rounded-3xl font-bold opacity-50">
+            <button class="py-3 px-5 font-bold text-white bg-teal-500 rounded-[20px] cursor-pointer">Submit</button>
+        </div>
+        <div class="max-w-212.5 mx-auto bg-white px-10 pb-10 pt-10 text-center rounded-bl-2xl rounded-br-2xl">
+            <button
+                class="py-4 px-8 bg-red-700 text-white font-bold drop-shadow-xl text-3xl rounded-[53px]  border border-red-700"
+                id="forthWarningText" hidden>Your Are Wrong</button>
+        </div>
+    </div>
+    <!-- Page-4 End  -->
+    <!-- Page-5 Start -->
+    <div class="py-10" id="fifth">
+        <div class="max-w-212.5 mx-auto bg-white pt-20 pb-5 px-20 text-center rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl">
+            <h1 class="uppercase font-bold text-3xl text-green-500 pb-10" id="fifthHeading">Congratulation! You Won The Game..
+            </h1>
+            <button
+                class="py-2 px-4 bg-purple-600 text-white font-bold drop-shadow-xl text-3xl rounded-[53px] border border-purple-600 cursor-pointer"
+                id="fifthBtn">Restart</button>
+            <button class="py-2 px-4" id="fifthWarningText"><img src="images/correctImg.webp" alt=""></button>
+        </div>
+    </div>
+    <!-- Page-5 End -->
 </body>
 
 </html>
