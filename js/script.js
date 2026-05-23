@@ -49,16 +49,56 @@ let thirdBtn = document.getElementById("thirdBtn");
 let thirdWarningText = document.getElementById("thirdWarningText");
 let fourthHidden = document.getElementById("fourth");
 
-thirdBtn.addEventListener("click", () =>{
-let inputValue = thirdInput.value ;
-if (inputValue == "") {
+thirdBtn.addEventListener("click", () => {
+  let inputValue = thirdInput.value;
+  if (inputValue == "") {
     thirdWarningText.removeAttribute("hidden");
     thirdInput.value = "";
-} else {
-    thirdWarningText.setAttribute("hidden",true);
+  } else {
+    thirdWarningText.setAttribute("hidden", true);
     thirdInput.value = "";
-    thirdHidden.setAttribute("hidden" , true);
+    thirdHidden.setAttribute("hidden", true);
     fourthHidden.removeAttribute("hidden");
-}
+  }
 });
 // Third Page End
+
+// Fourth Page Start
+let fourthHeading = document.getElementById("fourthHeading");
+let fourthInput = document.getElementById("fourthInput");
+let fourthBtn = document.getElementById("fourthBtn");
+let fourthWarningText = document.getElementById("fourthWarningText");
+let fifthHidden = document.getElementById("fifth");
+
+fourthBtn.addEventListener("click", () => {
+  let inputValue = fourthInput.value;
+  if (inputValue === secoundInput.value) {
+    fourthHidden.setAttribute("hidden", true);
+    fifthHidden.removeAttribute("hidden");
+    fourthHeading.setAttribute("hidden", true);
+  } else {
+    fourthWarningText.removeAttribute("hidden");
+    fourthInput.value = "";
+    fourthInput.placeholder = "Make Sure A Valid Guess Between 1 To 10";
+  }
+});
+// Fourth Page End
+
+// Fifth Page Start
+let fifthWarningText = document.getElementById("fifthWarningText");
+let fifthHeading = document.getElementById("fifthHeading");
+let fifthBtn = document.getElementById("fifthBtn");
+
+fifthWarningText.removeAttribute("hidden")
+
+fifthBtn.addEventListener("click", () => {
+ fifthHidden.setAttribute("hidden",true);
+ firstHidden.removeAttribute("hidden");
+ firstInput.value = "";
+ secoundInput.value = "";
+ thirdInput.value = "";
+ fourthInput.value = "";
+ fourthHeading.removeAttribute("hidden");
+
+});
+// Fifth Page End
